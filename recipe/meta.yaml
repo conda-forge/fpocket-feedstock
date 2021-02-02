@@ -1,5 +1,5 @@
 {% set name = "fpocket" %}
-{% set version = "3.1.4.2" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Discngine/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 6a801c7a4af0f76a58369b558ca5f6674571e1825024d459bba20bc07ae4f8b7
+  sha256: 97b808b233b0fc314fe5e32c9cc8cc7d4377b53aba36807a5554a180f13524c0
 
 build:
   number: 0
