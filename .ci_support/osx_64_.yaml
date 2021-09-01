@@ -9,7 +9,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libnetcdf:
-- 4.8.0
+- 4.8.1
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
