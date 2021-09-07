@@ -5,7 +5,7 @@ fi
 
 if [[ $(uname) == "Darwin" ]]; then
     export ARCH="MACOSXX86_64"
-    CXXFLAGS="-mmacosx-version-min=10.10" 
+    CXXFLAGS="-mmacosx-version-min=10.15" 
 fi
 
 ln -s ${PREFIX}/lib/* plugins/${ARCH}/molfile
