@@ -18,6 +18,8 @@ requirements:
     - {{ compiler('c') }}
   host:
     - libnetcdf
+  run_constrained:
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
 test:
   commands:
