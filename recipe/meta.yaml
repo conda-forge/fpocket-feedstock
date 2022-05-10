@@ -1,4 +1,3 @@
-{% set name = "fpocket" %}
 {% set version = "4.0.2" %}
 
 package:
@@ -16,6 +15,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - make
   host:
     - libnetcdf
 
