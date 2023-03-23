@@ -1,11 +1,11 @@
-About fpocket
-=============
+About fpocket-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpocket-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Discngine/fpocket
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpocket-feedstock/blob/main/LICENSE.txt)
 
 Summary: fpocket is a very fast open source protein pocket detection algorithm based on Voronoi tessellation
 

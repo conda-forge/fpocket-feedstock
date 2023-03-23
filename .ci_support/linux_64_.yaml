@@ -11,6 +11,6 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 libnetcdf:
-- 4.9.1
+- 4.9.2
 target_platform:
 - linux-64
