@@ -3,7 +3,11 @@ if [[ $(uname) == "Linux" ]]; then
 fi
 
 if [[ $(uname) == "Darwin" ]]; then
-    export ARCH="MACOSXX86_64"
+    if [[ "$target_platform" == "osx-arm64" ]]; then
+        export ARCH="MACOSXARM64"
+    else
+        export ARCH="MACOSXX86_64"
+    fi
 fi
 
 export LINKER="LD_LIBRARY_PATH=plugins/${ARCH}/molfile/ ${CC}"
