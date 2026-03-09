@@ -11,6 +11,7 @@ if [[ $(uname) == "Darwin" ]]; then
 fi
 
 export LINKER="LD_LIBRARY_PATH=plugins/${ARCH}/molfile/ ${CC}"
+export CFLAGS="-Wno-error=incompatible-pointer-types"
 
 make LINKER="${LINKER}" ARCH=${ARCH} CC=${CC} CCQHULL=${CC}
 make install BINDIR=$PREFIX/bin MANDIR=$PREFIX/man/man8 LIBDIR=$PREFIX/lib
