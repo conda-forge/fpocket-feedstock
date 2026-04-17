@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/Discngine/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 62b3da6490eeab0db488f0182150d340de2be0be23f4fd1def9d5846ce724ede
+  patches:
+    - fpocket.patch
 
 build:
   number: 0
