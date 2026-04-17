@@ -1,0 +1,24 @@
+From d51b272d92af836ca1ccfdc97179febe956cddb9 Mon Sep 17 00:00:00 2001
+From: Simon Bray <placeholder@placeholder.com>
+Date: Fri, 17 Apr 2026 11:22:28 +0200
+Subject: [PATCH] fix pointer error
+
+---
+ src/fparams.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/fparams.c b/src/fparams.c
+index feea510..9d2f3ef 100644
+--- a/src/fparams.c
++++ b/src/fparams.c
+@@ -293,7 +293,7 @@ s_fparams *get_fpocket_args(int nargs, char **args)
+             rest = par->custom_pocket_arg;
+             while ((pt = strtok_r(rest, ".", &rest)))
+             {
+-                strcpy(&residue_string, pt);
++                strcpy(residue_string, pt);
+                 rest2 = residue_string;
+                 apti = 0;
+                 while ((apt = strtok_r(rest2, ":", &rest2)))
+-- 
+2.43.0
