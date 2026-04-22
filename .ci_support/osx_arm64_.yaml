@@ -15,7 +15,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libnetcdf:
-- 4.9.3
+- 4.10.0
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:
